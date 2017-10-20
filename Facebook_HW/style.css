@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial;
+}
+
+header{
+	height: 85px;
+	background-color: #3B5998;
+}
+
+#loginform{
+	padding-top: 13px;
+	height: 65px;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#loginbutton{
+	font-family: inherit;
+    font-weight: bold;
+    font-size: 13px;
+    float: left;
+    margin-left: 15px;
+    background-color: #4267b2;
+    border-color: #29487d;
+    color: white;
+    margin-top: 20px;
+    border-style: solid;
+    padding: 3px 5px 2px;
+}
+
+
+#body{
+	height: 600px;
+	background: linear-gradient(white,#D3D8E8);
+	font-family: inherit;
+	min-width: 980px;
+}
+
+#signupform{
+	height: 600px;
+	width: 980px;
+	margin: 0 auto;
+	/*background-color: blue;*/
+}
+
+#intro p{
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+#fillin{
+	margin-top: 20px;
+	height: 160px;
+	width: 400px;
+	/*background-color: yellow;*/
+}
+
+.Ho{
+	width: 190px;
+	height: 35px;
+	border-radius: 4px;
+	float: left;
+	border: 1px solid #bdc7d8;
+	font-size: 18px;
+	padding-left: 3px;
+	background-color: transparent;
+
+}
+
+.Ten{
+	width: 190px;
+	height: 35px;
+	border-radius: 4px;
+	margin-left: 10px;
+	float: left;
+	border: 1px solid #bdc7d8;
+	font-size: 18px;
+	padding-left: 3px;
+	background-color: transparent;
+
+}
+
+.Contact{
+	width: 395px;
+	height: 35px;
+	border-radius: 4px;
+	margin-top: 10px;
+	float: left;
+	border: 1px solid #bdc7d8;
+	font-size: 18px;
+	padding-left: 3px;
+	background-color: transparent;
+}
+
+.Matkhaumoi{
+	width: 395px;
+	height: 35px;
+	border-radius: 4px;
+	margin-top: 10px;
+	float: left;
+	border: 1px solid #bdc7d8;
+	font-size: 18px;
+	padding-left: 3px;
+	background-color: transparent;
+}
+
+#visao{
+	font-size: 13px;
+	float: left;
+	width: 136px;
+	margin-left: 10px;
+	margin-top: 6px;
+
+}
