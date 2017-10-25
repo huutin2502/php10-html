@@ -1,0 +1,763 @@
+@font-face{
+	font-family: RobotoCondensed;
+	src: url("RobotoCondensed.ttf");
+}
+
+*{
+	margin:0;
+	padding: 0;
+	font-family: RobotoCondensed;
+}
+
+
+header{
+	height: 110px;
+	background-color: #ffc600;
+}
+
+header img{
+	height: 100px;
+	width: 400px;
+	margin-left: 75px;
+	margin-top: 6px;
+	float: left;
+}
+
+#information{
+	margin-left: 25px;
+	margin-top: 18px;
+	float: left;
+}
+
+#information h2{
+	margin-bottom: 4px;
+}
+
+#information p{
+	margin-top: 4px;
+}
+
+nav{
+	height: 40px;
+	background-color: #ae1a1f;
+	margin-bottom: 10px;
+}
+
+nav ul{
+	margin-left: 70px;
+}
+
+nav ul li{
+	list-style-type: none;
+	height: 30px;
+	float: left;
+	padding-top: 10px;
+	text-align: center;
+
+}
+
+nav ul li:hover{
+	background-color: yellow;
+}
+
+nav ul li a{
+	font-family: RobotoCondensed;
+	font-weight: 420;
+	font-size: 15px;
+	color: yellow;
+}
+
+nav ul li:hover a{
+	color: black;
+}
+
+nav ul li.trangchu:hover a{
+	color: yellow;
+}
+
+nav ul li.trangchu{
+	width: 108px;
+	background-color: #231f20;
+	margin-left: 10px;
+}
+
+nav ul li.tintucmenu{
+
+	width: 134px;
+}
+
+nav ul li.chuongtrinhhoc{
+
+	width: 158px;
+}
+
+nav ul li.khoahoc{
+
+	width: 150px;
+}
+
+nav ul li.tuyensinh{
+
+	width: 138px;
+}
+
+nav ul li.gochocvien{
+
+	width: 124px;
+}
+
+nav ul li.ebook{
+
+	width: 84px;
+}
+
+nav ul li.lienhe{
+
+	width: 86px;
+}
+
+nav ul li.gioithieu{
+
+	width: 102px;
+}
+
+nav ul li.dangnhap{
+
+	width: 108px;
+}
+
+nav ul li ul{
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    margin-top: 10px;
+}
+
+
+
+
+nav ul li ul li:hover{
+	background-color: yellow;
+	color: black;
+}
+
+nav ul li ul{
+	display: none;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+section img{
+	width: 1200px;
+	height: 340px;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 0;
+}
+
+nav ul li ul li{
+    width: 150px;
+    float: left;
+    background-color: #231f20;
+    padding-top: 5px;
+    height: 20px;
+    color: yellow;
+    margin: 0;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#block1{
+	width: 1200px;
+	height: 400px;
+	background-color: white;
+	margin-left: 80px;
+	/*margin-right: 80px;*/
+}
+
+#block2{
+	width: 1200px;
+	height: 885px;
+	background-color: white;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#sukien,#lichkhaigian{
+	display: block;
+	margin: 10px 0px 0px;
+	height: 40px;
+	width: 1200px;
+	box-shadow: 5px 0px 0px 0px #ae1a1f inset;
+	background-color: #f1f1f1;
+	float: left;
+}
+
+#sukien p.tintuc{
+	margin-left: 12px;
+	padding-top: 10px;
+	float: left;
+	color: #ae1a1f;
+}
+
+#sukien p.dangkyhoc{
+	float: right;
+	text-align: center;
+	height: 28px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 12px;
+	background-color: #ae1a1f;
+	color: white;
+	font-size: 13px;
+}
+
+#news{
+	height: 340px;
+	margin-top: 10px;
+	width: 100%;
+	background-color: white;
+	float: left;
+}
+
+#cuocthi{
+	background-color: white;
+	height: 340px;
+	width: 32%;	
+	float: left;
+}
+
+#hocbong{
+	background-color: white;
+	height: 340px;
+	width: 32%;	
+	float: left;
+	margin-left: 24px;
+}
+
+#cuocthi img{
+	margin: 0;
+	height: 210px;
+	width: 384px;
+}
+
+
+
+#hocbong img{
+	margin: 0;
+	height: 210px;
+	width: 384px;
+}
+
+#semina{
+	background-color: white;
+	height: 340px;
+	width: 32%;	
+	float: left;
+	margin-left: 24px;
+}
+
+#semina img{
+	margin: 0;
+	height: 210px;
+	width: 384px;
+}
+
+
+
+
+.tieude{
+	height: 40px;
+	width: 384px;
+	font-size: 14px;
+}
+
+
+
+#chitiet{
+	margin-top: 2px;
+	margin-left: 0;
+}
+#chitiet img{
+	height: 12px;
+	width: 12px;
+	float: left;
+	margin-top: 0;
+}
+
+#chitiet p.ngaythang{
+	font-size: 12px;
+	margin: 0;
+	margin-left: 2px;
+	padding-top: 0;
+	float: left;
+}
+#chitiet p.aptech{
+	font-size: 12px;
+	margin: 0;
+	margin-left: 2px;
+	padding-top: 0;
+	float: left;
+}
+
+#content{
+	float: left;
+	text-align: justify;
+	font-size: 13px;
+	margin: 0;
+	padding-top: 4px;
+}
+
+#chuongtrinhdaotao{
+	display: block;
+	margin: 10px 0px 0px;
+	height: 40px;
+	width: 1200px;
+	box-shadow: 5px 0px 0px 0px #ae1a1f inset;
+	background-color: #f1f1f1;
+	float: left;
+}
+
+.tintuc{
+	margin-left: 12px;
+	padding-top: 10px;
+	float: left;
+	color: #ae1a1f;
+}
+
+#semester{
+	margin-top: 20px;
+	height: 520px;
+	width: 1200px;
+	background-color: white;
+	float: left;
+}
+#ki1{
+	display: block;
+	height: 520px;
+	width: 290px;
+	background-color: white;
+	float: left;
+}
+
+#ki2{
+	display: block;
+	height: 520px;
+	width: 290px;
+	background-color: white;
+	margin-left: 14px;
+	float: left;
+}
+
+#ki3{
+	display: block;
+	height: 520px;
+	width: 290px;
+	background-color: white;
+	margin-left: 13px;
+	float: left;
+}
+
+#ki4{
+	display: block;
+	height: 520px;
+	width: 290px;
+	background-color: white;
+	margin-left: 13px;
+	float: left;
+}
+
+
+#hocki img{
+	margin:0;
+	width: 290px;
+	height: 350px;
+}
+
+#hocki img:hover{
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+.tenhocki{
+	color: #ae1a1f;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cackhoahoc{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.noidung{
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.nutxemchitiet{
+	margin-top: 10px;
+    color: white;
+    background-color: #ae1a1f;
+    height: 24px;
+    width: 90px;
+    font-size: 14px;
+    padding-top: 8px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.nutxemchitet:hover{
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+#loiich
+{
+	margin-top: 30px;
+	height: 276px;
+	width: 1200px;
+	background-color: white;
+	float: left;
+}
+
+.tieudeloiich{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.donvi{
+	text-align: center;
+}
+
+#thoigiandaotao{
+	margin-top: 10px;
+	height: 225px;
+	width: 1200px;
+	background-color: white;
+	float: left;
+}
+
+#quocte{
+	display: block;
+	height: 215px;
+	width: 290px;
+	background-color: white;
+	float: left;
+	padding-top: 10px;
+}
+
+#hainam{
+	display: block;
+	height: 215px;
+	width: 290px;
+	background-color: white;
+	margin-left: 14px;
+	float: left;
+	padding-top: 10px;
+}
+
+
+#daihoc{
+	display: block;
+	height: 215px;
+	width: 290px;
+	background-color: white;
+	margin-left: 13px;
+	float: left;
+	padding-top: 10px;
+}
+
+#vieclam{
+	display: block;
+	padding-top: 10px;
+	height: 215px;
+	width: 290px;
+	background-color: white;
+	margin-left: 13px;
+	float: left;
+}
+
+
+#thongtin img{
+	height: 89px;
+	width: 99px;
+	margin-left: 95px;
+}
+
+.tenchuongtrinh{
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loaichuongtrinh{
+    font-size: 18px;
+    color: #ae1a1f;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.loiichhoc{
+	font-size: 13px;
+    text-align: center;
+    margin-top: 5px;	
+}
+
+footer{
+	padding-top: 7px;
+    float: left;
+    height: 95px;
+    background-color: #AE1A1F;
+    width: 100%;
+    color: white;
+}
+
+footer img{
+	width: 19px;
+    height: 65px;
+    margin-left: 80px;
+    margin-right: 0;
+    margin-top: 0;
+    float: left;
+}
+
+#danhhieu{
+	float: left;
+    margin-left: 10px;
+    width: 500px;
+    margin-right: 60px
+}
+
+#hethong{
+	margin-left: 30px;
+}
+.danhhieutren{
+	font-size: 16px;
+}
+
+.danhhieuduoi{
+	font-size: 14px;
+}
+
+.copyright{
+	padding-left: 80px;
+    background: #98171C;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+#block3{
+	width: 1200px;
+/*	height: 500px;*/
+/*	background-color: pink;*/
+	margin: 20px 80px 20px 80px;
+	overflow: auto;
+}
+
+.lichkhaigian{
+		margin-left: 12px;
+	padding-top: 10px;
+	float: left;
+	color: #ae1a1f;
+}
+
+table{
+	float: left;
+	margin-top: 10px;
+	border:0.5px solid #eee;
+	border-collapse: collapse;
+}
+
+th{
+	height: 20px;
+	width: 150px;
+	border:0.5px solid #eee;
+	padding: 8px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #AE1A1F;
+	color: white;
+
+}
+
+td{
+	height: 30px;
+	font-size: 12px;
+	border:0.5px solid #eee;
+	text-align: center;
+	padding: 8px;
+
+}
+.new-head{
+	font-size: 12px;
+	text-align: left;
+}
+
+#block4{
+	width: 1200px;
+/*	height: 500px;*/
+/*	background-color: pink;*/
+	margin: 20px 80px 20px 80px;
+	overflow: auto;
+}
+
+#form{
+	float: left;
+	width: 400px;
+	height: 300px;
+/*	background-color: yellow;*/
+}
+
+#videogioithieu{
+	box-sizing: border-box;
+	float: left;
+	width: 770px;
+	height: 370px;
+/*	background-color: yellow;*/
+	margin-left: 30px;
+	border: 1px solid #ddd;
+	padding: 4px;
+}
+
+#dangkysinhvien{
+	display: block;
+	margin: 4px 0px 0px;
+	height: 40px;
+	width: 100%;
+	box-shadow: 5px 0px 0px 0px #ae1a1f inset;
+	background-color: #f1f1f1;
+	float: left;	
+}
+
+.dangkysinhvien{
+		margin-left: 12px;
+	padding-top: 10px;
+	float: left;
+	color: #ae1a1f;
+}
+
+input{
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 5px;
+	padding-left: 5px;
+	height: 30px;
+	border:0.5px solid #eee;
+}
+
+select{
+	font-size: 14px;
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 5px;
+	padding-left: 5px;
+	height: 30px;
+	border:0.5px solid #eee;
+}
+
+.nutdangky{
+	width: 30%;
+	background-color: #AE1A1F;
+	color: white;
+	border: 1px solid #ddd;
+
+}
+
+#block5{
+	width: 1200px;
+/*	height: 500px;*/
+/*	background-color: pink;*/
+	margin: 20px 80px 20px 80px;
+	overflow: auto;
+}
+
+#camket{
+	float: left;
+	width: 380px;
+	height: 200px;
+}
+
+#bangcap,#tuyensinhthuongxuyen{
+	float: left;
+	width: 380px;
+	height: 365px;
+/*	background-color: blue;*/
+	margin-left: 30px;
+}
+
+.dongtieude{
+    font-size: 18px;
+    color: #ae1a1f;
+    margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+.anh{
+	margin: 0;
+	width: 380px;
+	height: 200px;
+}
+
+.dongnoidung{
+	margin-top: 8px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.nutchitiet{
+	font-size: 14px;
+	margin-top: 5px;
+	background-color: #F0AD4E;
+	padding: 5px;
+	width: 85px;
+	color: white;
+}
+
+
+
+#block6{
+	width: 1200px;
+/*	background-color: pink;*/
+	margin: 20px 80px 20px 80px;
+	overflow: auto;
+}
+
+
+#ketnoi{
+	display: block;
+	margin: 4px 0px 0px;
+	height: 40px;
+	width: 100%;
+	box-shadow: 5px 0px 0px 0px #ae1a1f inset;
+	background-color: #f1f1f1;
+	float: left;	
+	margin-bottom: 10px;
+}
+.ketnoi{
+	margin-left: 12px;
+	padding-top: 10px;
+	float: left;
+	color: #ae1a1f;
+
+}
+
+.facebook{
+	height: 200px;
+	width: 380px;
+	border: none;
+}
