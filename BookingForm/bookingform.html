@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Room</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function checkValidate(){
+			if(checkDate() != false){
+				if(checkNumberOfRegister() == false){
+					alert("Số người lớn đặt phòng phải lớn hơn hoặc bằng số trẻ em. Xin kiểm tra lại")
+				} else{
+					alert("Bạn đã đăng kí thành công.")
+				}
+			}
+		}
+
+		function setDefaultDate(){
+			var dateNow = new Date();
+			var month;
+			month = dateNow.getMonth() + 1;
+			currentDate = dateNow.getFullYear() + "-" + month + "-" + dateNow.getDate();
+			document.getElementById('arrive').value = currentDate;
+			document.getElementById('depart').value = currentDate;
+
+			var room, adults, children;
+			room = document.getElementsByClassName('chitiet').selectedIndex;
+			var y = document.getElementsByClassName('chitiet').options;
+		}
+
+		function checkDate(){
+			var dateArrive, monthArrive, yearArrive, dateDepart, monthDepart, yearDepart;
+			var date = new Date(document.getElementById('arrive').value);
+			dateArrive = date.getDate();
+			monthArrive = date.getMonth()+1;
+			yearArrive = date.getFullYear();
+
+			date = new Date(document.getElementById('depart').value);
+			dateDepart = date.getDate();
+			monthDepart = date.getMonth()+1;
+			yearDepart = date.getFullYear();
+
+			currentDate = new Date(currentDate);
+			if(yearArrive < currentDate.getFullYear()){
+				alert("Ngày đến phải lớn hơn ngày hiện tại. Xin bạn kiểm trại lại!");		
+				return false;
+			} else if(monthArrive < currentDate.getMonth()){
+				alert("Ngày đến phải lớn hơn ngày hiện tại. Xin bạn kiểm trại lại!");
+				return false;	
+			} else if(dateArrive <= currentDate.getDate()){
+				alert("Ngày đến phải lớn hơn ngày hiện tại. Xin bạn kiểm trại lại!");
+				return false;
+			} else if(yearArrive > yearDepart){
+				alert("Ngày đi phải lớn hơn hoặc bằng ngày đến. Xin bạn kiểm tra lại!");
+				return false;
+			} else if(monthArrive > monthDepart){
+				alert("Ngày đi phải lớn hơn hoặc bằng ngày đến. Xin bạn kiểm tra lại");
+				return false;
+			} else if(dateArrive > dateDepart){
+				alert("Ngày đi phải lớn hơn hoặc bằng ngày đến. Xin bạn kiểm tra lại");
+				return false;
+			}
+		}
+
+		function checkNumberOfRegister(){
+			var adultsNum = document.getElementById('adultsNum').selectedIndex;
+			var childrenNum = document.getElementById('childrenNum').selectedIndex;
+			if(adultsNum + 1 < childrenNum){
+				return false;
+			}
+		}
+		
+	</script>
+
+</head>
+<body onload="setDefaultDate()">
+	<div class="background"></div>
+	<form>
+		<h1 style="text-align: center;">Thông tin đặt phòng</h1>
+		<div class="box">
+			<img src="login.png">
+			<input type="text" name="name" placeholder="Họ và tên" id="name" pattern="[a-zA-Z]{1-}" title="Tên của bạn chưa đúng. Xin kiểm tra lại!" required>
+		</div>
+		<div class="box">
+			<img src="phone.png">
+			<input type="text" name="phonenumber" placeholder="Số điện thoại" id="phonenumber" pattern="[0-9]{9-}" tilte="Số điện thoại của bạn phải là số" required>
+		</div>
+		
+		<div class="box">
+			<img src="time.png">
+			<input type="date" name="arrive" id="arrive">			
+		</div>
+
+		<div class="box">
+			<img src="time.png">
+			<input type="date" name="depart" id="depart">		
+		</div>
+
+		<div class="smallbox" style="clear: left; margin-left: 30px">
+			<select class="chitiet" id="roomNum">
+				<option selected>1 phòng</option>
+				<option>2 phòng</option>
+				<option>3 phòng</option>
+				<option>4 phòng</option>
+				<option>5 phòng</option>
+				<option>6 phòng</option>
+				<option>7 phòng</option>
+				<option>8 phòng</option>
+			</select>
+		</div>
+
+		<div class="smallbox">
+			<select class="chitiet" id="adultsNum">
+				<option>1 người lớn</option>
+				<option selected>2 người lớn</option>
+				<option>3 người lớn</option>
+				<option>4 người lớn</option>
+				<option>5 người lớn</option>
+				<option>6 người lớn</option>
+				<option>7 người lớn</option>
+				<option>8 người lớn</option>
+			</select>
+		</div>	
+
+		<div class="smallbox">
+			<select class="chitiet" id="childrenNum">
+				<option selected>0 trẻ em</option>
+				<option>1 trẻ em</option>
+				<option>2 trẻ em</option>
+				<option>3 trẻ em</option>
+				<option>4 trẻ em</option>
+				<option>5 trẻ em</option>
+				<option>6 trẻ em</option>
+				<option>7 trẻ em</option>
+			</select>
+		</div>
+
+		<input type="button" name="submit" class="datphong"  value="Đặt phòng"onclick="checkValidate();">
+
+	</form>
+</body>
+</html>
