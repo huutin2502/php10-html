@@ -1,9 +1,373 @@
+$green_color: #18c465;
+$dark_color: #939393;
+$organ_color: #f5a623;
+
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
-nav{
-	padding: 0;
-	margin: 0;
+
+header{
+	height: 55px;
+	/*background-color: blue;*/
+	padding: 0px 25px 0px 25px;
+
+	.logoheader{
+		float: left;
+		margin-right: 50px;
+	}
+
+	.iconright{
+		float: right;
+		margin-left: 25px;
+		margin-top: 20px;
+	}
+	a{
+		box-sizing: content-box;
+		height: 37px;
+		font-weight: bold;
+		font-size: 0.9em;
+		display: block;
+		text-decoration: none;
+		color: black;
+		float: left;
+		padding: 18px 30px 0px 30px;
+
+	}
+
+	a:hover{
+		background-color: $green_color;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+#backgroundintro{
+	height: 792px;
+	background-image: url("image/background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	input{
+		text-align: left;
+		width: 200px;
+		background-color: white;		
+		margin-top: 180px;
+		border-radius: 30px;
+		color: $green_color;
+		font-weight: bold;
+		border: none;
+		box-shadow: 0px 0px 7px 0px #221f21;
+		background-image: url("image/rightarrow.png");
+		background-position:145px;
+		background-repeat:no-repeat;
+		background-size: 25px 17px;
+		padding: 10px 20px 10px 30px;
+	
+	}
+
+	input:hover{ transform: scale(1.1); }
+
+	h1{ margin-top: 525px; }
+
+}
+
+
+#aboutDNES{
+	/*background-color: pink;*/
+	text-align: center;
+
+	.intro{
+		padding: 20px 190px 20px 190px;
+		a{
+			color: $green_color;
+		}
+	}
+
+	.detail{
+		margin-top: 20px;
+		.circle{
+			background-color: white;
+			border-radius: 50%;
+		    height: 80px;
+		    width: 80px;
+		    padding: 10px;
+		    margin: 0 auto;
+		    margin-bottom: 20px;
+		    box-shadow: $dark_color 0px 0px 8px 0px;
+		}
+
+		.circle:hover{
+			transform: scale(1.2);
+		}
+
+		p{
+			margin: 0px;
+		}
+
+		p:first-of-type{
+			margin-bottom: 5px;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	.readmore{
+		text-align: center;
+		width: 150px;
+		padding: 10px;
+		background-color: $green_color;
+		margin: 0 auto;
+		margin-top: 30px;
+		border-radius: 30px;
+		color: white;
+		font-weight: bold;
+		box-shadow: 0px 0px 7px 0px #221f21;
+	}
+
+	.readmore:hover{
+		transform: scale(1.1);
+		background-color: $organ_color;
+		color: black;
+	}
+
+}
+#incubatingprogram{
+	clear: left;
+	height: 400px;
+	margin-top: 30px;
+	background-color: green;
+
+	.container-fluid{
+		padding: 0;
+
+		.imageprogram{
+			padding: 0;
+		}	
+	}
+
+	.contentright{
+		height: 432px;
+		background-color: #fbfbfb;
+		padding-left: 30px;
+		h1{ margin-top: 110px }
+
+		p{ margin-right: 150px }
+
+		.applynow{
+			text-align: center;
+			width: 150px;
+			padding: 10px;
+			background-color: $organ_color;
+			margin-top: 20px;
+			border-radius: 30px;
+			color: white;
+			font-weight: bold;
+			box-shadow: 0px 0px 7px 0px #221f21;
+		}
+
+		.applynow:hover{
+			transform: scale(1.1);
+			background-color: $green_color;
+			color: black;			
+		}
+	}
+	
+
+}
+#newsevents{
+	clear: left;
+	/*background-color: blue;*/
+	.container{
+		
+		h1{
+			margin: 40px;
+			text-align: center;
+		}
+		.smallnews{
+			margin-top: 10px;
+			line-height: 1.6;
+			text-align: left;
+
+			h4{
+				font-size: 1.2em;
+				line-height: 1.6;
+			}
+
+			a{ 
+				text-decoration: none;
+				color: black;
+			 }
+
+			img:hover{ transform: scale(1.1); }
+		}
+	}
+
+	.bx-wrapper { 
+		box-shadow: none;
+		-wekit-box-shadow: none;
+		 }
+}
+#subcribe{
+	clear: left;
+	height: 250px;
+	background-color: yellow;
+	text-align: center;
+	background-image: url("image/backgroundSubcribe.png");
+	background-size:100% 250px;
+
+	h3{ 
+		color: white;
+		padding-top: 70px;
+		font-weight: bold;
+	}
+
+	.email{
+		border:none;
+		text-align: left;
+		width: 300px;
+		padding: 10px;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-right: 10px;
+		border-radius: 30px;
+		color: white;
+	}
+
+	.email:hover{ transform: scale(1.1); }
+
+	.submit{
+		border:none;
+		text-align: center;
+		width: 150px;
+		padding: 10px;
+		background-color: $green_color;
+		margin: 0 auto;
+		margin-top: 30px;
+		border-radius: 30px;
+		color: white;
+		font-weight: bold;
+		box-shadow: 0px 0px 7px 0px #221f21;
+	}
+
+	.submit:hover{
+		transform: scale(1.1);
+		background-color: $organ_color;
+		color: black;		
+	}
+
+}
+
+#campanies{
+	background-color: white;
+	text-align: center;
+
+	h4{
+		margin: 40px 0px 40px 0px;
+		font-weight: bold;
+	}
+
+	img{
+		margin-left: 25px;
+	}
+
+	img:hover{ transform: scale(1.1); }
+}
+
+footer{
+	clear: left;
+	margin-top: 40px;
+	height: 200px;
+	background-color: yellow;
+	background-image: url("image/mapbackground.png");
+	background-size:100% 200px;
+
+
+	.container{
+		padding-top: 30px;
+		color: $dark_color;
+	}
+
+	.footercontent{
+		color: $dark_color;
+		margin-top: 10px;
+
+		p{
+			line-height: 1;
+		}
+
+		a{ text-decoration: none;
+		color: $dark_color; }
+
+		.menuleft, .menuright{
+			width: 50%;
+			float: left;			
+		}
+
+	}
+
+	.socialicon{ margin-right: 7px;}
+	.socialicon:hover{ transform: scale(1.1); }
+}
+
+@media (max-width: 480px) {
+	*{
+		font-size: 12px;
+		h1{
+			font-size: 1.5em;
+		}
+	}
+	#backgroundintro{ 
+		height: 245px;
+		h1{ margin-top: 138px; }
+		input{ 
+			margin-left: -288px;
+			margin-top: 48px;
+			transform: scale(0.7);
+			}
+	}
+
+	#aboutDNES{
+		.intro{ padding: 20px 50px 20px 50px; }
+		.detail { padding:0; }
+		
+	}
+
+	#incubatingprogram{
+		.contentright{
+			height: 205px;
+			h1{ margin-top: 30px }
+			p{ margin-right: 20px }
+		}
+	}
+
+	#newsevents{
+		.container{
+			h1{ margin: 20px 0px 10px; }
+		}
+		
+	}
+	#subcribe{
+		h3{ padding-top: 40px; }
+	}
+	#campanies{
+		h4{ margin: 30px 0px 10px 0px; }
+		img{
+			margin-left: 0;
+			margin-top: 10px;
+    		transform: scale(0.8);
+		}
+	}
+
+	footer{
+		.container{ text-align: center;	 }
+		.footercontent{ display: none; }
+	}
 }

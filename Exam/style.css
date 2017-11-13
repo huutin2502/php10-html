@@ -1,9 +1,278 @@
 * {
   margin: 0;
-  padding: 0; }
-
-nav {
   padding: 0;
-  margin: 0; }
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  height: 55px;
+  /*background-color: blue;*/
+  padding: 0px 25px 0px 25px; }
+  header .logoheader {
+    float: left;
+    margin-right: 50px; }
+  header .iconright {
+    float: right;
+    margin-left: 25px;
+    margin-top: 20px; }
+  header a {
+    box-sizing: content-box;
+    height: 37px;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: block;
+    text-decoration: none;
+    color: black;
+    float: left;
+    padding: 18px 30px 0px 30px; }
+  header a:hover {
+    background-color: #18c465;
+    color: white;
+    text-decoration: none; }
+
+#backgroundintro {
+  height: 792px;
+  background-image: url("image/background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center; }
+  #backgroundintro input {
+    text-align: left;
+    width: 200px;
+    background-color: white;
+    margin-top: 180px;
+    border-radius: 30px;
+    color: #18c465;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 7px 0px #221f21;
+    background-image: url("image/rightarrow.png");
+    background-position: 145px;
+    background-repeat: no-repeat;
+    background-size: 25px 17px;
+    padding: 10px 20px 10px 30px; }
+  #backgroundintro input:hover {
+    transform: scale(1.1); }
+  #backgroundintro h1 {
+    margin-top: 525px; }
+
+#aboutDNES {
+  /*background-color: pink;*/
+  text-align: center; }
+  #aboutDNES .intro {
+    padding: 20px 190px 20px 190px; }
+    #aboutDNES .intro a {
+      color: #18c465; }
+  #aboutDNES .detail {
+    margin-top: 20px; }
+    #aboutDNES .detail .circle {
+      background-color: white;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+      padding: 10px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      box-shadow: #939393 0px 0px 8px 0px; }
+    #aboutDNES .detail .circle:hover {
+      transform: scale(1.2); }
+    #aboutDNES .detail p {
+      margin: 0px; }
+    #aboutDNES .detail p:first-of-type {
+      margin-bottom: 5px; }
+    #aboutDNES .detail a {
+      text-decoration: none;
+      color: black; }
+  #aboutDNES .readmore {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    background-color: #18c465;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 7px 0px #221f21; }
+  #aboutDNES .readmore:hover {
+    transform: scale(1.1);
+    background-color: #f5a623;
+    color: black; }
+
+#incubatingprogram {
+  clear: left;
+  height: 400px;
+  margin-top: 30px;
+  background-color: green; }
+  #incubatingprogram .container-fluid {
+    padding: 0; }
+    #incubatingprogram .container-fluid .imageprogram {
+      padding: 0; }
+  #incubatingprogram .contentright {
+    height: 432px;
+    background-color: #fbfbfb;
+    padding-left: 30px; }
+    #incubatingprogram .contentright h1 {
+      margin-top: 110px; }
+    #incubatingprogram .contentright p {
+      margin-right: 150px; }
+    #incubatingprogram .contentright .applynow {
+      text-align: center;
+      width: 150px;
+      padding: 10px;
+      background-color: #f5a623;
+      margin-top: 20px;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0px 0px 7px 0px #221f21; }
+    #incubatingprogram .contentright .applynow:hover {
+      transform: scale(1.1);
+      background-color: #18c465;
+      color: black; }
+
+#newsevents {
+  clear: left;
+  /*background-color: blue;*/ }
+  #newsevents .container h1 {
+    margin: 40px;
+    text-align: center; }
+  #newsevents .container .smallnews {
+    margin-top: 10px;
+    line-height: 1.6;
+    text-align: left; }
+    #newsevents .container .smallnews h4 {
+      font-size: 1.2em;
+      line-height: 1.6; }
+    #newsevents .container .smallnews a {
+      text-decoration: none;
+      color: black; }
+    #newsevents .container .smallnews img:hover {
+      transform: scale(1.1); }
+  #newsevents .bx-wrapper {
+    box-shadow: none;
+    -wekit-box-shadow: none; }
+
+#subcribe {
+  clear: left;
+  height: 250px;
+  background-color: yellow;
+  text-align: center;
+  background-image: url("image/backgroundSubcribe.png");
+  background-size: 100% 250px; }
+  #subcribe h3 {
+    color: white;
+    padding-top: 70px;
+    font-weight: bold; }
+  #subcribe .email {
+    border: none;
+    text-align: left;
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-right: 10px;
+    border-radius: 30px;
+    color: white; }
+  #subcribe .email:hover {
+    transform: scale(1.1); }
+  #subcribe .submit {
+    border: none;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    background-color: #18c465;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 7px 0px #221f21; }
+  #subcribe .submit:hover {
+    transform: scale(1.1);
+    background-color: #f5a623;
+    color: black; }
+
+#campanies {
+  background-color: white;
+  text-align: center; }
+  #campanies h4 {
+    margin: 40px 0px 40px 0px;
+    font-weight: bold; }
+  #campanies img {
+    margin-left: 25px; }
+  #campanies img:hover {
+    transform: scale(1.1); }
+
+footer {
+  clear: left;
+  margin-top: 40px;
+  height: 200px;
+  background-color: yellow;
+  background-image: url("image/mapbackground.png");
+  background-size: 100% 200px; }
+  footer .container {
+    padding-top: 30px;
+    color: #939393; }
+  footer .footercontent {
+    color: #939393;
+    margin-top: 10px; }
+    footer .footercontent p {
+      line-height: 1; }
+    footer .footercontent a {
+      text-decoration: none;
+      color: #939393; }
+    footer .footercontent .menuleft, footer .footercontent .menuright {
+      width: 50%;
+      float: left; }
+  footer .socialicon {
+    margin-right: 7px; }
+  footer .socialicon:hover {
+    transform: scale(1.1); }
+
+@media (max-width: 480px) {
+  * {
+    font-size: 12px; }
+    * h1 {
+      font-size: 1.5em; }
+
+  #backgroundintro {
+    height: 245px; }
+    #backgroundintro h1 {
+      margin-top: 138px; }
+    #backgroundintro input {
+      margin-left: -288px;
+      margin-top: 48px;
+      transform: scale(0.7); }
+
+  #aboutDNES .intro {
+    padding: 20px 50px 20px 50px; }
+  #aboutDNES .detail {
+    padding: 0; }
+
+  #incubatingprogram .contentright {
+    height: 205px; }
+    #incubatingprogram .contentright h1 {
+      margin-top: 30px; }
+    #incubatingprogram .contentright p {
+      margin-right: 20px; }
+
+  #newsevents .container h1 {
+    margin: 20px 0px 10px; }
+
+  #subcribe h3 {
+    padding-top: 40px; }
+
+  #campanies h4 {
+    margin: 30px 0px 10px 0px; }
+  #campanies img {
+    margin-left: 0;
+    margin-top: 10px;
+    transform: scale(0.8); }
+
+  footer .container {
+    text-align: center; }
+  footer .footercontent {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
